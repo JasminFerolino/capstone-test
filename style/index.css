@@ -4,6 +4,9 @@ body {
     padding: 0;
     background-color: #f4f4f9;
     color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 header {
@@ -16,6 +19,8 @@ header {
 nav ul {
     list-style: none;
     padding: 0;
+    margin: 0;
+    text-align: center;
 }
 
 nav ul li {
@@ -27,11 +32,30 @@ nav ul li a {
     color: white;
     text-decoration: none;
     font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ffccff;
 }
 
 main {
     text-align: center;
     padding: 2em;
+    max-width: 800px;
+    margin: auto;
+    flex: 1;
+}
+
+main h1 {
+    font-size: 2em;
+    margin-bottom: 0.5em;
+}
+
+main p {
+    font-size: 1.2em;
+    line-height: 1.5;
+    color: #555;
 }
 
 footer {
@@ -39,5 +63,5 @@ footer {
     padding: 1em 0;
     background-color: #333;
     color: white;
-    margin-top: 2em;
+    margin-top: auto;
 }
