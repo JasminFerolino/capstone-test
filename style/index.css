@@ -10,7 +10,7 @@ body {
 }
 
 header {
-    background-color: #ff2e97;
+    background-color: #ff7cc8;
     padding: 1em 0;
     text-align: center;
     color: white;
@@ -47,21 +47,10 @@ main {
     flex: 1;
 }
 
-main h1 {
-    font-size: 2em;
-    margin-bottom: 0.5em;
-}
-
-main p {
-    font-size: 1.2em;
-    line-height: 1.5;
-    color: #555;
-}
-
 footer {
     text-align: center;
     padding: 1em 0;
-    background-color: #333;
+    background-color: #ff7cc8;
     color: white;
     margin-top: auto;
 }
