@@ -12,20 +12,37 @@ body {
 header {
     background-color: #ff7cc8;
     padding: 1em 0;
-    text-align: center;
     color: white;
+}
+
+.logo img {
+    height: 200px; /* Adjust height as needed */
+    max-width: 200px; /* Adjust width if necessary */
+    object-fit: contain; /* Ensures the image maintains aspect ratio */
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.logo img {
+    height: 50px; /* Adjust size as needed */
 }
 
 nav ul {
     list-style: none;
     padding: 0;
     margin: 0;
-    text-align: center;
+    display: flex;
 }
 
 nav ul li {
-    display: inline;
-    margin: 0 15px;
+    margin-left: 20px;
 }
 
 nav ul li a {
