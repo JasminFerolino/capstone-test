@@ -2,7 +2,8 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f9;
+    background: url("./logo/SK-Background.png") no-repeat center center fixed;
+    background-size: cover; /* Ensures the logo covers the entire background */
     color: #333;
 }
 
