@@ -1,93 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Poppins', sans-serif;
+    background: url('../logo/SK-Logo.jpg') no-repeat center center;
+    background-size: contain;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
     margin: 0;
-    padding: 0;
-    background: url("./logo/SK-Background.png") no-repeat center center fixed;
-    background-size: cover; /* Ensures the logo covers the entire background */
-    color: #333;
+    position: relative;
 }
 
-header {
-    background-color: #ff7cc8;
-    padding: 1em 0;
-    text-align: center;
-    color: white;
+.overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(224, 222, 222, 0.05);
+    backdrop-filter: blur(3px);
 }
 
-nav ul {
-    list-style: none;
-    padding: 0;
-}
-
-nav ul li {
-    display: inline;
-    margin: 0 15px;
-}
-
-nav ul li a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-main {
-    text-align: center;
-    padding: 2em;
-}
-
-form {
-    display: inline-block;
-    text-align: left;
-    margin-top: 1em;
-    background: linear-gradient(to bottom right, #ffffff, #e0e0e0);
-    padding: 2em;
+.container {
+    background: rgba(255, 255, 255, 0.15);
+    padding: 15px;
     border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    width: 350px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 450px;
+    width: 85%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
 }
 
-form label {
-    display: block;
-    margin: 0.5em 0 0.2em;
-    font-weight: bold;
-    font-size: 0.9em;
-    color: #555;
+.form-group {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    margin-bottom: 15px;
 }
 
-form input, form select {
-    width: calc(100% - 1em);
-    padding: 0.5em;
-    margin-bottom: 1em;
+.form-group input, .form-group select {
+    width: 45%;
+    padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
-    font-size: 0.9em;
+    font-size: 14px;
 }
 
-form input:focus, form select:focus {
-    border-color: #4CAF50;
-    outline: none;
-    box-shadow: 0 0 5px rgba(76, 175, 80, 0.5);
+.full-width {
+    width: 100%;
 }
 
-form button {
-    background-color: #4CAF50;
-    color: white;
+button {
+    background-color: rgb(243, 121, 159);
     border: none;
-    padding: 0.7em 2em;
+    padding: 10px;
+    width: 100%;
     border-radius: 5px;
+    font-size: 16px;
     cursor: pointer;
-    font-size: 1em;
-    transition: background-color 0.3s;
-}
-
-form button:hover {
-    background-color: #73e986;
-}
-
-footer {
-    text-align: center;
-    padding: 1em 0;
-    background-color: #ff7cc8;
-    color: white;
-    margin-top: 2em;
 }
